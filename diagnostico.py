@@ -12,20 +12,21 @@ class Candidatos:
     codigo = 1
 
     def __init__(self, codigo, nome, intencoes):
+        """[Construtor de candidatos"""
         self._codigo = codigo
         self._nome = nome
         self._intencoes = intencoes
 
-    # Função que retorna o código do candidato
     def get_codigo(self):
+        """Função que retorna o código do candidato"""
         return self._codigo
-    
-    # Função que retorna o nome do candidato
+
     def get_nome(self):
+        """Função que retorna o nome do candidato"""
         return self._nome
 
-    # Função que retorna a quantidade de intenções de votos do candidato
     def get_intencoes(self):
+        """Função que retorna a quantidade de intenções de votos do candidato"""
         return self._intencoes
 
 candidatos = []
@@ -42,16 +43,18 @@ while codigo != 0:
         candidato = Candidatos(codigo, nome, intencoes)
         candidatos.append(candidato)
 
-# Função que retorna o total de votos
 def total_votos():
+    """Função que retorna o total de votos"""
     return eleitores_consultados + votos_branco + indecisos
 
-# Função que retorna o a porcentagem de votos em branco
+
 def percentual_branco():
+    """Função que retorna o a porcentagem de votos em branco"""
     return f'{((votos_branco * 100) / total_votos())}% - Votos em Branco'
 
-# Função que retorna o a porcentagem de votos indecisos
+
 def percentual_indecisos():
+    """Função que retorna o a porcentagem de votos indecisos"""
     return f'{((indecisos * 100) / total_votos())}% - Indecisos\n'
 
 lista_votos = []
