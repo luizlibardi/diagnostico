@@ -4,7 +4,7 @@ indecisos = int(input('Quantos votos foram indecisos? '))
 
 class Candidatos:
 
-    def _init_(self, codigo, nome, intencoes):
+    def __init__(self, codigo, nome, intencoes):
         self.codigo = codigo
         self.nome = nome
         self.intencoes = intencoes
@@ -33,3 +33,4 @@ for candidato in candidatos:
     print(f'{percentual_indecisos}% - Indecisos\n')
     if percentual_voto > 50:
         print(f'O candidato {candidato.nome} possui alta probabilidade de eleição no primeiro turno')
+    

@@ -7,8 +7,7 @@ Esse diagnóstico é uma ferramenta pedagógica para melhor condução da nossa 
 
 ## Instruções:
 
-O programa deve ser criado em python ou C++ utilizando a ferramenta repl.it
-Tente completar seu programa, investindo o máximo de conhecimento nele. É permitida a consulta à internet sobre os comandos/estruturas do python/C++. 
+O programa deve ser criado em python ou C++. Tente completar seu programa, investindo o máximo de conhecimento nele. É permitida a consulta à internet sobre os comandos/estruturas do python/C++. 
 
 Exame Diagnóstico - Pesquisa Eleitoral
 
