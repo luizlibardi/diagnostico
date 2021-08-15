@@ -25,12 +25,12 @@ while codigo != 0:
 total_votos = eleitores_consultados + votos_branco + indecisos
 percentual_branco = ((votos_branco * 100) / total_votos)
 percentual_indecisos = ((indecisos * 100) / total_votos)
-percentual_voto = ((candidato.intencoes * 100) / total_votos)
 
 for candidato in candidatos:
+    percentual_voto = ((candidato.intencoes * 100) / total_votos)
     print(f'{percentual_voto}% - {candidato.nome}')
-    print(f'{percentual_branco}% - Votos em Branco')
-    print(f'{percentual_indecisos}% - Indecisos\n')
-    if percentual_voto > 50:
-        print(f'O candidato {candidato.nome} possui alta probabilidade de eleição no primeiro turno')
-    
+print(f'{percentual_branco}% - Votos em Branco')
+print(f'{percentual_indecisos}% - Indecisos\n')
+
+if percentual_voto > 50:
+    print(f'O candidato {candidato.nome} possui alta probabilidade de eleição no primeiro turno')
