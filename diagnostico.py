@@ -52,14 +52,12 @@ for candidato in candidatos:
 percentual_branco()
 percentual_indecisos()
 
-
+# Letra C)
 if max(lista_votos) - min(lista_votos) < 10:
-    print('\nFoi verificado um cenário de grande equilíbrio entre as escolhas dos eleitores') # Letra C)
+    print('\nFoi verificado um cenário de grande equilíbrio entre as escolhas dos eleitores') 
 
+# Letra D
 print(lista_votos)
-if sorted(lista_votos) == True:
-    print('O registro foi realizado em ordem crescente de número de intenções de votos') # Letra D
-
-
-
+if lista_votos == sorted(lista_votos):
+    print('O registro foi realizado em ordem crescente de número de intenções de votos') 
 
