@@ -1,5 +1,5 @@
 """
-Diagnóstico proposto na aula de Estrutura de Dados 1 - UCL, pelo professor André Ribeiro no dia 05/08 para saber o nível da turma.
+Diagnóstico proposto na aula de Estrutura de Dados 1 - UCL, pelo professor André Ribeiro para nivelar o conhecimento da turma.
 """
 
 # Entrada de dados pelo Usuário
@@ -45,11 +45,9 @@ def total_votos():
     """Função que retorna o total de votos"""
     return eleitores_consultados + votos_branco + indecisos
 
-
 def percentual_branco():
     """Função que retorna o a porcentagem de votos em branco"""
     return f'{((votos_branco * 100) / total_votos())}% - Votos em Branco'
-
 
 def percentual_indecisos():
     """Função que retorna o a porcentagem de votos indecisos"""
@@ -72,7 +70,5 @@ if max(lista_votos) - min(lista_votos) < 10:
     print('\nFoi verificado um cenário de grande equilíbrio entre as escolhas dos eleitores') 
 
 # Letra D
-print(lista_votos)
 if lista_votos == sorted(lista_votos):
     print('O registro foi realizado em ordem crescente de número de intenções de votos') 
-
