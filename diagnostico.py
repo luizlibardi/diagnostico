@@ -30,14 +30,12 @@ class Candidatos:
         return self._intencoes
 
 candidatos = []
-codigo = 1
+codigo = None
 
 # Loop para o usuário fazer a criação dos candidatos
 while codigo != 0:
     codigo = int(input('\nCódigo do candidato: '))
-    if codigo == 0:
-        pass
-    else:
+    if codigo != 0:
         nome = input('Nome do candidato: ')
         intencoes = int(input('Quantidade de intenções de votos: '))
         candidato = Candidatos(codigo, nome, intencoes)
